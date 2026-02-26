@@ -1,0 +1,11 @@
+# Python dependencies
+gymnasium
+stable-baselines3
+minigrid
+numpy
+matplotlib
+tensorboard
+pyyaml
+pandas
+scipy
+torch

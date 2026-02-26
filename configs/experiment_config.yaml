@@ -1,0 +1,13 @@
+# Overall Experiment Configuration
+project_name: "PPO Maze Navigation"
+
+conditions:
+  - static_baseline
+  - dynamic_low
+  - dynamic_medium
+
+evaluation:
+  num_episodes: 100
+  deterministic: true
+
+seeds: [42, 123, 456]

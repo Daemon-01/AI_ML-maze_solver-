@@ -1,0 +1,22 @@
+# Dynamic Low (2% change rate) Configuration
+env_name: "MazeEnv-v0"
+dynamic: true
+change_probability: 0.02
+
+training:
+  total_timesteps: 1000000
+  seeds: [42, 123, 456]
+
+ppo:
+  learning_rate: 0.0003
+  n_steps: 2048
+  batch_size: 64
+  n_epochs: 10
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.01
+
+paths:
+  log_dir: "logs/dynamic_low"
+  model_dir: "models/dynamic_low"
